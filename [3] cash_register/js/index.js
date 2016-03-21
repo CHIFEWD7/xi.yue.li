@@ -25,18 +25,17 @@ function enter() {
 
   $('#entries').append('<tr><td></td><td>' + entry + '</td></tr>');
   
-  // Update the running total
+
   total = total + entry;
   
-  // Print the updated total with proper money formatting
+
   $('#total').html(dollar(total));
   
-  // Clear out the input field, ready for next value
+
   $('#newEntry').val('');
   
 }
 
-// Use this to convert a number to U.S. money format
 function dollar(number) {
   
 
